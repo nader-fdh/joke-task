@@ -6,36 +6,32 @@
     height: 60px;
     background-color: #303030;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+ text-align: center;
     align-items: center;
-  
-    letter-spacing: 16px;
     z-index: 3;
 }
 
 .nav-menu{
     float: right;
     color: white;
+    width: 100%;
 }
 .so-funktionierts{
-    width: 158px;
-    height: 19px;
-    margin: 20px 64px 21px 341px;
-    font-family: monospace;
+ margin-right: 5%;
     font-size: 15px ;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
+    font-family: Montserrat;
     color: var(--white-tow);
 }
 
 .SONDERANGEBOTE{
-    width: 158px;
-    height: 19px;
-    margin: 20px 64px 21px 10px;
-    font-family: monospace;
+    font-family: Montserrat;
     font-size: 15px ;
     font-weight: 600;
     font-stretch: normal;
@@ -60,10 +56,4 @@
     letter-spacing: normal;
     color: var(--white-tow);
 }
-
-.menu select:active {
-    background-image: red !important;
-    color: var(--accentBg);
-    border-color: var(--accentFg);
-    background-color: var(--accentFg);
-  }
+ 

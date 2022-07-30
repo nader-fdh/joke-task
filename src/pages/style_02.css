@@ -210,4 +210,16 @@
         margin: 20px -24px;
         background-color: #ffffff;
     }
+    .tranding{
+        float: right;
+        width: max-content;
+        padding: 5px 14px;
+        background-color: #ffbe5b;
+        border-radius: 25px;
+        font-family: Montserrat;
+        color: #fff;
+        margin: 16px 240px;
+        font-size: 12px;
+        position: absolute;
+    }
 }

@@ -21,16 +21,19 @@ const Page_02 = () => {
   const [showDrop, setShowDrop] = useState(false);
   const [categories, setCategories] = useState([]);
   const [selectedCat, setSelectedCat] = useState();
-  const [joke, setJoke] = useState();
+  const [jokeRondom, setJokeRondom] = useState();
 
- const defaultValue =  data.find((joke) => joke.id === jokeId)
+  var joke =  data.find((joke) => joke.id === jokeId)
  
   const searchByJoke = (str) => {
     api.getRondomJoke(str).then((response) => {
       if (response.data) {
-        setJoke(response.data);
+        setJokeRondom(response.data);
+     
+        console.warn("jokeRondom",jokeRondom)
       }
     });
+ 
     setSelectedCat(str.toUpperCase())
     setShowDrop(false)
   };
@@ -48,14 +51,14 @@ const Page_02 = () => {
       console.log(response.data.result);
 
       setData(response.data.result);
-      console.warn("zefzfzfzefzef",defaultValue)
+      console.warn("jokeRondom",jokeRondom)
       console.log("eqfsqdv", data);
    
     });
     api.getCategories().then((response) => {
         setCategories(response.data);
       });
-      setJoke(defaultValue)
+      // joke (defaultValue)
   }, []);
 
   return (
@@ -104,7 +107,19 @@ const Page_02 = () => {
         </div>
         </Link>
         <div>
-          <div className="post-section">
+          {
+            jokeRondom ? (  <div className="post-section">
+            <div className="card-header">
+              <div className="category-name-02">
+                <span> . {jokeRondom?.categories[0].toUpperCase()} JOKES</span>
+              </div>
+              <div className="tranding"> . TRANDING</div>
+            </div>
+            <span className="title">
+              {jokeRondom?.categories[0].toUpperCase()} JOKES{" "}
+            </span>
+            <span className="post-content">{jokeRondom?.value}</span>
+          </div>) : (  <div className="post-section">
             <div className="card-header">
               <div className="category-name-02">
                 <span> . {joke?.categories[0].toUpperCase()} JOKES</span>
@@ -115,7 +130,9 @@ const Page_02 = () => {
               {joke?.categories[0].toUpperCase()} JOKES{" "}
             </span>
             <span className="post-content">{joke?.value}</span>
-          </div>
+          </div>)
+          }
+        
           <div className="opinion">
             <span className="like">
          

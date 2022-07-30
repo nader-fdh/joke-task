@@ -171,3 +171,43 @@
 .dislike:hover{
     background-color: #Ad1c0a;
 }
+
+@media screen and (max-width : 450px) {
+    .page-02 .post-content {
+        width: 277px;
+        height: 161px;
+        margin: 68px 0 10px;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #303030;
+        position: absolute;
+        padding: 42px 31px 62px 25px;
+    }
+    .page-02 .post-section .title {
+        width: 294px;
+        height: 60px;
+        margin: 2px 14px 8px 0px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #cfb995;
+        position: absolute;
+        padding: 41px 368px 186px 16px;
+    }
+    .page-02 .post-section {
+        width: 300px;
+        height: 287px;
+        box-shadow: 0px 0px 2px #aaaaaa;
+        margin: 20px -24px;
+        background-color: #ffffff;
+    }
+}

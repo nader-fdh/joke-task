@@ -1,0 +1,173 @@
+.page-02 .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 7% 10% !important;
+}
+ 
+.page-02 .post-section{
+    width: 70%;
+}
+
+ 
+
+.page-02 .post-section{
+    width: 730px;
+    height: 287px;
+    box-shadow: 0px 0px 2px #aaaaaa;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+.page-02 .post-section .title{
+    width: 404px;
+    height: 60px;
+    margin: 2px 14px 8px 0px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #cfb995;
+    position: absolute;
+    padding: 41px 368px 186px 16px;
+}
+.btn-back span{
+    padding: 15px;
+    background-color: #303030;
+    margin-top: -73px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 17px;
+    border-radius: 25%;
+}
+.page-02 .input-search-drop{
+    background-color: #ffffff;
+    height: max-content;
+    z-index: 999;
+    position: absolute;
+    width: 360px;
+    margin-top: 18px;
+    border-radius: 3px;
+    text-align: start;
+}
+.page-02 li {
+    list-style-type: none; 
+    cursor: pointer;
+ }
+.page-02 .arrow-drop img{
+    transform: rotate(179deg);
+}
+
+.page-02 .arrow-drop{
+    margin-top: -16px;
+    margin-left: 8px;
+    position: absolute;
+}
+.page-02 .category-name-02{
+    width: max-content;
+    padding: 5px 14px;
+    background-color: #57E690;
+    border-radius: 25px;
+    color: #fff;
+    margin: 16px;
+    font-size: 12px;
+    font-family: Montserrat;
+    position: absolute;
+}
+
+.tranding{
+    float: right;
+    width: max-content;
+    padding: 5px 14px;
+    background-color: #ffbe5b;
+    border-radius: 25px;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 16px 609px;
+    font-size: 12px;
+    position: absolute;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.page-02 .post-content{
+    width: 650px;
+    height: 154px;
+    margin:  68px 0 32px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: #303030;
+    position: absolute;
+    padding: 42px 31px 62px 25px  ;
+}
+
+.page-02 .top-10-section{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px #aaaaaa;
+}
+
+.page-02 .top-10-section .title{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+.page-02 .top-10-section .content{
+    font-size: 12px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #303030;
+}
+.opinion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.like{
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 10px;
+    background-color: #11d62e;
+    border-radius: 50%;
+}
+.like:hover{
+    background-color: #0d9020;
+}
+.dislike{
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 10px;
+    background-color: #Ff2a11;
+    border-radius: 50%;
+}
+
+.dislike:hover{
+    background-color: #Ad1c0a;
+}
